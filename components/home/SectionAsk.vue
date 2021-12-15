@@ -22,7 +22,7 @@
         :key="i"
         class="card"
       >
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-4 ">
           <van-image
             src="/images/test.jpg"
             width="66"
