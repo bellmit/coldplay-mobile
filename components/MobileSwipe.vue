@@ -6,7 +6,7 @@
       class="w-full h-full rounded-md" 
     >
       <van-swipe-item v-for="(item, index) in list" :key="index" v-lazy="item.img">
-        <img :src="item.img" class="w-full h-full rounded-md" />
+        <img :src="item.img" class="w-full h-full rounded-md" alt="swipe" />
       </van-swipe-item>
     </van-swipe>
   </mobile-square>

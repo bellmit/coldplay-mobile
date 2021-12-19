@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '光大健康在线是国内优秀的健康平台，提供健康在线咨询，日本健康咨询，赴日精密体检，海外药品商城等多个项目，为您的健康保驾护航' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

@@ -23,7 +23,8 @@ module.exports = {
       '4xl': ['2.25rem', { lineHeight: 1 }]
     },
     boxShadow: {
-      mobile: '0px 0px 3px 0px #999999;'
+      mobile: '0px 0px 3px 0px #999999;',
+      footer: '0px -1px 0px 0px #999999'
     },
     extend: {
       backgroundImage: {

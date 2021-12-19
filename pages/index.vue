@@ -1,5 +1,5 @@
 <template>
-  <div class="relactive pb-12">
+  <div class="relactive pb-16">
     <!-- title -->
     <div class="title-box">
       <p>早上好！<span class="text-origin-400">立即登录</span></p>
@@ -22,12 +22,12 @@
         :class="kingkongInTop ? 'border-b border-gray-300 px-4 bg-white py-2' : 'border-none mt-3.5'"
       >
         <div class="grid grid-cols-5 gap-x-4">
-          <div 
-            v-for="(item, index) in kingkong" 
+          <div
+            v-for="(item, index) in kingkong"
             :key="index"
             class="w-full h-full text-center space-y-2"
           >
-            <img :src="item.img" class="w-6 h-6 inline-block">
+            <img :src="item.img" class="w-6 h-6 inline-block" alt="kingkong">
             <p class="text-xs">{{ item.text }}</p>
           </div>
         </div>
@@ -35,23 +35,41 @@
     </van-sticky>
     <!-- menu -->
     <div class="mt-3.5 px-4 grid grid-cols-2 grid-rows-2 gap-3.5 h-[8.75rem]">
-      <van-image src="/images/home/menu_a.png" width="100%" height="100%" lazy-load class="row-span-2" />
-      <van-image src="/images/home/menu_b.png" width="100%" height="100%" lazy-load />
-      <van-image src="/images/home/menu_c.png" width="100%" height="100%" lazy-load />
+      <van-image src="/images/home/menu_a.png" width="100%" height="100%" lazy-load class="row-span-2" alt="热品套餐" />
+      <van-image src="/images/home/menu_b.png" width="100%" height="100%" lazy-load alt="高端体检" />
+      <van-image src="/images/home/menu_c.png" width="100%" height="100%" lazy-load alt="电子处方" />
     </div>
     <!-- main -->
     <main class="mt-[1.88rem] space-y-[1.88rem]">
       <!-- 健康在线咨询 -->
       <section-ask />
+      <!-- 赴日精密体检 -->
+      <section-pe />
+      <!-- 海外药品商城 -->
+      <section-shop />
+      <!-- 全球健康资讯 -->
+      <section-info />
+      <!-- 电子处方中心 -->
+      <section-etp />
     </main>
+    <!-- footer -->
+    <mobile-footer />
   </div>
 </template>
 
 <script>
 import SectionAsk from '../components/home/SectionAsk'
+import SectionPe from '../components/home/SectionPe'
+import SectionShop from '../components/home/SectionShop'
+import SectionInfo from '../components/home/SectionInfo'
+import SectionEtp from '../components/home/SectionEtp'
 export default {
   components: {
-    SectionAsk
+    SectionAsk,
+    SectionPe,
+    SectionShop,
+    SectionInfo,
+    SectionEtp
   },
   data() {
     return {
