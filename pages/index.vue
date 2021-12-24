@@ -19,13 +19,14 @@
     <van-sticky :offset-top="40" @change="stickyChange">
       <div
         class="px-4" 
-        :class="kingkongInTop ? 'border-b border-gray-300 px-4 bg-white py-2' : 'border-none mt-3.5'"
+        :class="kingkongInTop ? 'border-b border-gray-300 px-4 bg-white py-2 max-w-md mx-auto' : 'border-none mt-3.5'"
       >
         <div class="grid grid-cols-5 gap-x-4">
           <div
             v-for="(item, index) in kingkong"
             :key="index"
             class="w-full h-full text-center space-y-2"
+            @click="goAssign(item.ref)"
           >
             <img :src="item.img" class="w-6 h-6 inline-block" alt="kingkong">
             <p class="text-xs">{{ item.text }}</p>
@@ -35,22 +36,22 @@
     </van-sticky>
     <!-- menu -->
     <div class="mt-3.5 px-4 grid grid-cols-2 grid-rows-2 gap-3.5 h-[8.75rem]">
-      <van-image src="/images/home/menu_a.png" width="100%" height="100%" lazy-load class="row-span-2" alt="热品套餐" />
-      <van-image src="/images/home/menu_b.png" width="100%" height="100%" lazy-load alt="高端体检" />
-      <van-image src="/images/home/menu_c.png" width="100%" height="100%" lazy-load alt="电子处方" />
+      <van-image src="/images/home/menu_a.webp" width="100%" height="100%" lazy-load class="row-span-2" alt="热品套餐" />
+      <van-image src="/images/home/menu_b.webp" width="100%" height="100%" lazy-load alt="高端体检" />
+      <van-image src="/images/home/menu_c.webp" width="100%" height="100%" lazy-load alt="电子处方" />
     </div>
     <!-- main -->
     <main class="mt-[1.88rem] space-y-[1.88rem]">
       <!-- 健康在线咨询 -->
-      <section-ask />
+      <section-ask ref="askRef" />
       <!-- 赴日精密体检 -->
-      <section-pe />
+      <section-pe ref="peRef" />
       <!-- 海外药品商城 -->
-      <section-shop />
+      <section-shop ref="shopRef" />
       <!-- 全球健康资讯 -->
-      <section-info />
+      <section-info ref="infoRef" />
       <!-- 电子处方中心 -->
-      <section-etp />
+      <section-etp ref="etpRef" />
     </main>
     <!-- footer -->
     <mobile-footer />
@@ -75,11 +76,11 @@ export default {
     return {
       kingkongInTop: false,
       kingkong: [
-        { text: '专家问诊', ref: 'askRef', img: './images/kingkong/doctor.png' },
-        { text: '健康体检', ref: 'peRef', img: './images/kingkong/pe.png' },
-        { text: '海外药品', ref: 'shopRef', img: './images/kingkong/shop.png' },
-        { text: '最新资讯', ref: 'infoRef', img: './images/kingkong/info.png' },
-        { text: '电子处方', ref: 'etpRef', img: './images/kingkong/etp.png' }
+        { text: '专家问诊', ref: 'askRef', img: './images/kingkong/doctor.webp' },
+        { text: '健康体检', ref: 'peRef', img: './images/kingkong/pe.webp' },
+        { text: '海外药品', ref: 'shopRef', img: './images/kingkong/shop.webp' },
+        { text: '最新资讯', ref: 'infoRef', img: './images/kingkong/info.webp' },
+        { text: '电子处方', ref: 'etpRef', img: './images/kingkong/etp.webp' }
       ]
     }
   },
@@ -87,8 +88,19 @@ export default {
     stickyChange(state) {
       this.kingkongInTop = state
     },
-    goAssign(ref) {
-      console.log(ref)
+    goAssign(name) {
+      console.log(this.$refs[name].$el.offsetHeight)
+      let h = this.$refs[name].$el.offsetHeight  //模块内容高度
+      let t = (this.$refs[name].$el.offsetTop - 120) //模块相对于内容顶部的距离
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      if(scrollTop > t) {
+        window.scrollTo(0,t)
+      } else {
+        window.scrollTo({
+          top: t,
+          behavior: "smooth"
+        })
+      }
     }
   }
 }

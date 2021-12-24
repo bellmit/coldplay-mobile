@@ -28,7 +28,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'test-bg': "url('/images/test.jpg')",
+        'test-bg': "url('/images/test.webp')",
       }
     },
     screens: {

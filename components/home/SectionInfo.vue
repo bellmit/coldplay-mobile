@@ -14,7 +14,7 @@
         </div>
         <p class="mt-6 text-xs text-gray-600">余益惠科技    7分钟前</p>
       </div>
-      <van-image src="/images/test.jpg" width="110" height="71" radius="7" lazy-load class="flex-shrink-0" alt="info" /> 
+      <van-image src="/images/test.webp" width="110" height="71" radius="7" lazy-load class="flex-shrink-0" alt="info" /> 
     </div>
   </section>
 </template>       

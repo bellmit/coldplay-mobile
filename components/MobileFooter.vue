@@ -4,7 +4,7 @@
       <!-- 首页 -->
       <nuxt-link to="/" class="tab">
         <van-image
-          :src="active === 1 ? '/images/footer/home_s.png' : '/images/footer/home.png' "
+          :src="active === 1 ? '/images/footer/home_s.webp' : '/images/footer/home.webp' "
           width="24"
           height="24"
           alt="home"
@@ -14,7 +14,7 @@
       <!-- 资讯 -->
       <nuxt-link to="/" class="tab">
         <van-image
-          :src="active === 2 ? '/images/footer/info_s.png' : '/images/footer/info.png' "
+          :src="active === 2 ? '/images/footer/info_s.webp' : '/images/footer/info.webp' "
           width="24"
           height="24"
           alt="info"
@@ -24,7 +24,7 @@
       <!-- 消息 -->
       <nuxt-link to="/" class="tab">
         <van-image
-          :src="active === 3 ? '/images/footer/chat_s.png' : '/images/footer/chat.png' "
+          :src="active === 3 ? '/images/footer/chat_s.webp' : '/images/footer/chat.webp' "
           width="24"
           height="24"
           alt="chat"
@@ -34,7 +34,7 @@
       <!-- 我的 -->
       <nuxt-link to="/" class="tab">
         <van-image
-          :src="active === 4 ? '/images/footer/user_s.png' : '/images/footer/user.png' "
+          :src="active === 4 ? '/images/footer/user_s.webp' : '/images/footer/user.webp' "
           width="24"
           height="24"
           alt="user"

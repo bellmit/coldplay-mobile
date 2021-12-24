@@ -9,10 +9,10 @@
     <!-- menu -->
     <div class="menu-box">
       <nuxt-link to="/" class="h-16">
-        <van-image src="/images/home/ask_a.png" width="100%" height="100%" lazy-load alt="国内专家" />
+        <van-image src="/images/home/ask_a.webp" width="100%" height="100%" lazy-load alt="国内专家" />
       </nuxt-link>
       <nuxt-link to="/" class="h-16">
-        <van-image src="/images/home/ask_b.png" width="100%" height="100%" lazy-load alt="日本专家" />
+        <van-image src="/images/home/ask_b.webp" width="100%" height="100%" lazy-load alt="日本专家" />
       </nuxt-link>
     </div>
     <!-- card -->
@@ -24,7 +24,7 @@
       >
         <div class="flex items-center space-x-4">
           <van-image
-            src="/images/test.jpg"
+            src="/images/test.webp"
             width="66"
             height="66"
             round

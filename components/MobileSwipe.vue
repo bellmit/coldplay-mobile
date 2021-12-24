@@ -18,9 +18,9 @@ export default {
     list: {
       type: Array,
       default:() => [
-        { img: '/images/test.jpg' },
-        { img: '/images/test.jpg' },
-        { img: '/images/test.jpg' },
+        { img: '/images/test.webp' },
+        { img: '/images/test.webp' },
+        { img: '/images/test.webp' },
       ]
     },
     round: {

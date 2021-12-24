@@ -21,7 +21,7 @@
           <p class="mt-5 text-xs"><span class="text-origin-400 text-1.5xl">36600</span> 元/次</p>
         </div>
         <van-image
-          src="/images/test.jpg"
+          src="/images/test.webp"
           width="78"
           height="78"
           fit="cover"

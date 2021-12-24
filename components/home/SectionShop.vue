@@ -24,7 +24,7 @@
         <p class="text-xs">国内药品</p>
         <div class="right-layout-sub">
           <div v-for="i in 3" :key="i" class="w-full h-full rounded">
-            <van-image src="/images/test.jpg" width="100%" height="100%" radius="4" lazy-load alt="国内药品" />
+            <van-image src="/images/test.webp" width="100%" height="100%" radius="4" lazy-load alt="国内药品" />
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
         <p class="text-xs">海外药品</p>
         <div class="right-layout-sub">
           <div v-for="i in 3" :key="i" class="w-full h-full rounded">
-            <van-image src="/images/test.jpg" width="100%" height="100%" radius="4" lazy-load alt="海外药品"/>
+            <van-image src="/images/test.webp" width="100%" height="100%" radius="4" lazy-load alt="海外药品"/>
           </div>
         </div>
       </div>
@@ -46,9 +46,9 @@ export default {
   data() {
     return {
       list: [
-        { img: '/images/test.jpg' },
-        { img: '/images/test.jpg' },
-        { img: '/images/test.jpg' }
+        { img: '/images/test.webp' },
+        { img: '/images/test.webp' },
+        { img: '/images/test.webp' }
       ]
     }
   }

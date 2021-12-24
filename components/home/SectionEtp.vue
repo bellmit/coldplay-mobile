@@ -8,9 +8,9 @@
     </div>
     <!-- content -->
     <div class="content">
-      <van-image src="/images/home/etp_a.png" width="100%" height="120" lazy-load alt="国内处方中心" />
-      <van-image src="/images/home/etp_b.png" width="100%" height="120" lazy-load alt="日本处方中心" />
-      <van-image src="/images/home/etp_c.png" width="100%" height="120" lazy-load alt="海外处方中心" />
+      <van-image src="/images/home/etp_a.webp" width="100%" height="120" lazy-load alt="国内处方中心" />
+      <van-image src="/images/home/etp_b.webp" width="100%" height="120" lazy-load alt="日本处方中心" />
+      <van-image src="/images/home/etp_c.webp" width="100%" height="120" lazy-load alt="海外处方中心" />
     </div>
   </section>
 </template>
