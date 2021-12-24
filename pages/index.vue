@@ -89,7 +89,6 @@ export default {
       this.kingkongInTop = state
     },
     goAssign(name) {
-      console.log(this.$refs[name].$el.offsetHeight)
       let h = this.$refs[name].$el.offsetHeight  //模块内容高度
       let t = (this.$refs[name].$el.offsetTop - 120) //模块相对于内容顶部的距离
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
