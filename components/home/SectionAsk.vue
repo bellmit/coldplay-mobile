@@ -4,11 +4,11 @@
     <div class="flex items-center px-4">
       <div class="mark" />
       <h2 class="ml-2 font-bold">健康在线咨询</h2>
-      <nuxt-link to="/" class="ml-auto text-gray-500 text-xs">查看更多 ></nuxt-link>
+      <nuxt-link to="/ask" class="ml-auto text-gray-500 text-xs">查看更多 ></nuxt-link>
     </div>
     <!-- menu -->
     <div class="menu-box">
-      <nuxt-link to="/" class="h-16">
+      <nuxt-link to="/ask" class="h-16">
         <van-image src="/images/home/ask_a.webp" width="100%" height="100%" lazy-load alt="国内专家" />
       </nuxt-link>
       <nuxt-link to="/" class="h-16">

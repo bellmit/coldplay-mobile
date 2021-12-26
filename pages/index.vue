@@ -1,9 +1,9 @@
 <template>
   <div class="relactive pb-16">
     <!-- title -->
-    <div class="title-box">
+    <header>
       <p>早上好！<span class="text-origin-400">立即登录</span></p>
-    </div>
+    </header>
     <!-- search -->
     <div class="search-box">
       <div class="search">
@@ -41,7 +41,7 @@
       <van-image src="/images/home/menu_c.webp" width="100%" height="100%" lazy-load alt="电子处方" />
     </div>
     <!-- main -->
-    <main class="mt-[1.88rem] space-y-[1.88rem]">
+    <main>
       <!-- 健康在线咨询 -->
       <section-ask ref="askRef" />
       <!-- 赴日精密体检 -->
@@ -106,7 +106,7 @@ export default {
 </script>
 
 <style scoped>
-  .title-box {
+  header {
     @apply w-full h-11 flex items-center text-xl font-bold px-4
   }
   .search-box {
@@ -114,5 +114,8 @@ export default {
   }
   .search {
     @apply w-full h-full bg-gray-100 flex items-center px-2.5 text-gray-500 text-sm rounded-md
+  }
+  main {
+    @apply mt-[1.88rem] space-y-[1.88rem]
   }
 </style>

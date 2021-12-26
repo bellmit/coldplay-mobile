@@ -24,6 +24,7 @@ module.exports = {
     },
     boxShadow: {
       mobile: '0px 0px 3px 0px #999999;',
+      header: '0px 0px 1px 0px #999999',
       footer: '0px -1px 0px 0px #999999'
     },
     extend: {

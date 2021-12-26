@@ -12,7 +12,7 @@
         <p>首页</p>
       </nuxt-link>
       <!-- 资讯 -->
-      <nuxt-link to="/" class="tab">
+      <nuxt-link to="/info" class="tab">
         <van-image
           :src="active === 2 ? '/images/footer/info_s.webp' : '/images/footer/info.webp' "
           width="24"
@@ -22,7 +22,7 @@
         <p>资讯</p>
       </nuxt-link>
       <!-- 消息 -->
-      <nuxt-link to="/" class="tab">
+      <nuxt-link to="/chat" class="tab">
         <van-image
           :src="active === 3 ? '/images/footer/chat_s.webp' : '/images/footer/chat.webp' "
           width="24"
