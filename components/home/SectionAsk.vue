@@ -2,12 +2,12 @@
   <section>
     <!-- title -->
     <div class="flex items-center px-4">
-      <div class="mark" />
+      <div class="w-1 h-[1.13rem] rounded-md opacity-70 bg-gradient-to-b from-red-400 to-origin-300" />
       <h2 class="ml-2 font-bold">健康在线咨询</h2>
       <nuxt-link to="/ask" class="ml-auto text-gray-500 text-xs">查看更多 ></nuxt-link>
     </div>
     <!-- menu -->
-    <div class="menu-box">
+    <div class="mt-3.5 grid grid-cols-2 gap-x-4 h-16 px-4">
       <nuxt-link to="/ask" class="h-16">
         <van-image src="/images/home/ask_a.webp" width="100%" height="100%" lazy-load alt="国内专家" />
       </nuxt-link>
@@ -16,11 +16,11 @@
       </nuxt-link>
     </div>
     <!-- card -->
-    <div class="card-box">
+    <div class="mt-[0.81rem] overflow-x-scroll flex space-x-3.5 px-4">
       <div
         v-for="i in 5"
         :key="i"
-        class="card"
+        class="w-[90%] flex-shrink-0 border border-gray-300 rounded-md p-3.5"
       >
         <div class="flex items-center space-x-4">
           <van-image
@@ -60,17 +60,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-  .mark {
-    @apply w-1 h-[1.13rem] rounded-md opacity-70 bg-gradient-to-b from-red-400 to-origin-300
-  }
-  .menu-box {
-    @apply mt-3.5 grid grid-cols-2 gap-x-4 h-16 px-4
-  }
-  .card-box {
-    @apply mt-[0.81rem] overflow-x-scroll flex space-x-3.5 px-4
-  }
-  .card {
-    @apply w-[90%] flex-shrink-0 border border-gray-300 rounded-md p-3.5
-  }
-</style>

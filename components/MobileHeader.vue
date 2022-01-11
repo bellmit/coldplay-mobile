@@ -1,5 +1,8 @@
 <template>
-  <header :class="border ? 'shadow-header' : ''">
+  <header
+    class="fixed top-0 inset-x-0 h-12 flex items-center px-4 z-50 bg-white"
+    :class="border ? 'shadow-header' : ''"
+  >
     <!-- back -->
     <div @click="back">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,9 +40,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  header {
-    @apply fixed top-0 inset-x-0 h-12 flex items-center px-4 z-50 bg-white
-  }
-</style>
