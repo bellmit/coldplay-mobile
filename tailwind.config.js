@@ -30,7 +30,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         'test-bg': "url('/images/test.webp')",
-      }
+      },
+      aspectRatio: {
+        '4/1': '4 / 1',
+        '4/2': '4 / 2',
+        '4/3': '4 / 3',
+      },
     },
     screens: {
       sm: '640px',

@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-gray-200">
-    <div class="default">
+    <div class="container max-w-md w-full mx-auto bg-white min-h-screen relative leading-none text-base">
       <!-- Nuxt -->
       <Nuxt />
     </div>
@@ -14,9 +14,6 @@ export default {
 </script>
 
 <style>
-  .default {
-    @apply container max-w-md w-full mx-auto bg-white min-h-screen relative leading-none text-base
-  }
   ::-webkit-scrollbar {
     display: none
   }

@@ -1,5 +1,5 @@
 <template>
-  <footer class="fixed bottom-0 inset-x-0 text-xs z-50">
+  <footer class="fixed bottom-0 inset-x-0 max-w-md mx-auto text-xs z-50">
     <div class="h-12 bg-white z-50 flex items-center justify-around shadow-footer">
       <!-- 首页 -->
       <nuxt-link to="/" class="flex flex-col items-center space-y-0.5">
@@ -32,7 +32,7 @@
         <p>消息</p>
       </nuxt-link>
       <!-- 我的 -->
-      <nuxt-link to="/" class="flex flex-col items-center space-y-0.5">
+      <nuxt-link to="/center/user" class="flex flex-col items-center space-y-0.5">
         <van-image
           :src="active === 4 ? '/images/footer/user_s.webp' : '/images/footer/user.webp' "
           width="24"

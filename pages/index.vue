@@ -1,12 +1,12 @@
 <template>
   <div class="relactive pb-16">
     <!-- title -->
-    <header>
+    <header class="w-full h-11 flex items-center px-4 text-xl font-bold">
       <p>早上好！<span class="text-origin-400">立即登录</span></p>
     </header>
     <!-- search -->
-    <div class="search-box">
-      <div class="search">
+    <div class="w-full h-11 flex items-center px-4 py-1 sticky top-0 bg-white z-50">
+      <div class="w-full h-full bg-gray-100 flex items-center px-2.5 text-gray-500 text-sm rounded-md">
         <p class="">搜索药品、品牌</p>
         <van-icon name="search" class="ml-auto" />
       </div>
@@ -41,7 +41,7 @@
       <van-image src="/images/home/menu_c.webp" width="100%" height="100%" lazy-load alt="电子处方" />
     </div>
     <!-- main -->
-    <main>
+    <main class="mt-[1.88rem] space-y-[1.88rem]">
       <!-- 健康在线咨询 -->
       <section-ask ref="askRef" />
       <!-- 赴日精密体检 -->
@@ -104,18 +104,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  header {
-    @apply w-full h-11 flex items-center text-xl font-bold px-4
-  }
-  .search-box {
-    @apply w-full h-11 flex items-center px-4 py-1 sticky top-0 bg-white z-50
-  }
-  .search {
-    @apply w-full h-full bg-gray-100 flex items-center px-2.5 text-gray-500 text-sm rounded-md
-  }
-  main {
-    @apply mt-[1.88rem] space-y-[1.88rem]
-  }
-</style>

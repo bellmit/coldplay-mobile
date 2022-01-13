@@ -1,10 +1,12 @@
 <template>
   <div class="relative pb-16">
     <!-- title -->
-    <header>消息</header>
+    <header class="w-full h-11 px-4">
+      <h1 class="text-xl font-bold leading-[2.75rem]">消息(2)</h1>
+    </header>
     <!-- search -->
-    <div class="search-box">
-      <div class="search">
+    <div class="w-full h-11 flex items-center px-4 py-1 sticky top-0 bg-white z-50">
+      <div class="w-full h-full bg-gray-100 flex items-center px-2.5 text-gray-500 text-sm rounded-md">
         <p class="">搜索联系人</p>
         <van-icon name="search" class="ml-auto" />
       </div>
@@ -15,7 +17,9 @@
         v-for="i in 8" :key="i"
         class="flex items-center space-x-3"
       >
-        <van-image src="/images/test.webp" width="51" height="51" alt="avater" radius="7" class="flex-shrink-0" lazy-load />
+        <van-badge :content="2" max="99">
+          <van-image src="/images/test.webp" width="51" height="51" alt="avater" radius="7" class="flex-shrink-0" lazy-load />
+        </van-badge>
         <div 
           class="flex-grow w-full space-y-3 py-3.5"
           :class="i === 8 ? '' : 'border-b border-gray-300'"
@@ -35,15 +39,3 @@ export default {
 
 }
 </script>
-
-<style scoped>
-  header {
-    @apply w-full h-11 px-4 leading-[2.75rem] text-xl font-bold
-  }
-  .search-box {
-    @apply w-full h-11 flex items-center px-4 py-1 sticky top-0 bg-white z-50
-  }
-  .search {
-    @apply w-full h-full bg-gray-100 flex items-center px-2.5 text-gray-500 text-sm rounded-md
-  }
-</style>

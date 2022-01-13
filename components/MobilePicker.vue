@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="w-full h-11 flex items-center text-sm bg-white shadow-header">
     <!-- text -->
     <div class="flex-grow w-full px-4 line-1">
       当前选择：内科/心血管疾病
@@ -23,10 +23,6 @@ export default {
 </script>
 
 <style scoped>
-  .box {
-    @apply w-full h-11 flex items-center text-sm bg-white;
-    box-shadow: 0px 1px 0px 0px #E6E6E6;
-  }
   .mark {
     width: 0.25rem;
     height: 1.13rem;

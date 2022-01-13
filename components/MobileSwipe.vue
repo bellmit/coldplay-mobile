@@ -1,5 +1,5 @@
 <template>
-  <mobile-square ar="50">
+  <div class="aspect-4/2">
     <van-swipe 
       :autoplay="4000"
       :show-indicators="false"
@@ -9,7 +9,7 @@
         <img :src="item.img" class="w-full h-full rounded-md" alt="swipe" />
       </van-swipe-item>
     </van-swipe>
-  </mobile-square>
+  </div>
 </template>
 
 <script>
